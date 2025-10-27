@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Instituto Exemplo - Início</title>
+  <meta name="description" content="Plataforma de gestão e engajamento para ONGs">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container nav-bar">
+        
+        <div class="site-brand">
+            <img src="img/logo.svg" alt="Logotipo" class="site-logo">
+            <div>
+                <h1 class="site-title">Instituto Exemplo</h1>
+                <p class="muted site-subtitle">Transformando comunidades</p>
+            </div>
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-controls="main-navigation">
+        
+        <label for="menu-toggle" class="menu-toggle-label">
+            <span class="hamb-icon"></span>
+        </label>
+
+        <nav class="nav-menu" id="main-navigation" aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="projetos.html">Projetos ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Projeto Alfa</a></li>
+                        <li><a href="#">Projeto Beta</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Fazendo a diferença com tecnologia</h2>
+      <p>Uma plataforma que ajuda ONGs a gerenciar projetos, captar recursos e engajar voluntários.</p>
+    </section>
+
+    <section aria-labelledby="destaques">
+      <h3 id="destaques">Destaques</h3>
+      <div class="grid-12 card-list"> 
+        <article class="card col-12 col-md-4">
+          <h4>Projetos em Andamento</h4>
+          <p class="muted">Conheça nossas iniciativas recentes.</p>
+          <a href="projetos.html" class="btn btn-secondary">Ver Projetos</a>
+        </article>
+        <article class="card col-12 col-md-4">
+          <h4>Seja Voluntário</h4>
+          <p class="muted">Encontre oportunidades próximas a você.</p>
+          <a href="cadastro.html" class="btn btn-secondary">Quero me Cadastrar</a>
+        </article>
+        <article class="card col-12 col-md-4">
+          <h4>Doações</h4>
+          <p class="muted">Apoie nosso trabalho com segurança.</p>
+          <a href="#" class="btn btn-secondary">Doar Agora</a>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="galeria">
+      <h3 id="galeria">Galeria</h3>
+      <div class="grid-12 gallery-grid"> 
+        <img data-lazy src="img/placeholder-1.svg" alt="Atividade 1" class="gallery-item col-6 col-md-4 col-lg-3">
+        <img data-lazy src="img/placeholder-2.svg" alt="Atividade 2" class="gallery-item col-6 col-md-4 col-lg-3">
+        <img data-lazy src="img/placeholder-3.svg" alt="Atividade 3" class="gallery-item col-6 col-md-4 col-lg-3">
+        <img data-lazy src="img/placeholder-4.svg" alt="Atividade 4" class="gallery-item col-6 col-md-4 col-lg-3">
+        <img data-lazy src="img/placeholder-5.svg" alt="Atividade 5" class="gallery-item col-6 col-md-4 col-lg-3">
+        <img data-lazy src="img/placeholder-6.svg" alt="Atividade 6" class="gallery-item col-6 col-md-4 col-lg-3">
+        </div>
+    </section>
+
+    <section aria-labelledby="multimidia">
+      <h3 id="multimidia">Vídeos e depoimentos</h3>
+      <div class="grid-12">
+        <div class="card col-12 col-md-6">
+          <h4>Vídeo institucional</h4>
+          <video controls width="100%" preload="metadata">
+            <source src="img/thumb.svg" type="image/svg+xml">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+        <div class="card col-12 col-md-6">
+          <h4>Depoimento em áudio</h4>
+          <audio controls style="width: 100%;">
+            <source src="img/thumb.svg" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year">2025</span> Instituto Exemplo — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
