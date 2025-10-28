@@ -43,7 +43,7 @@ const handleNavigation = (event) => {
         const path = target.getAttribute('data-path');
         
         // Atualiza a URL do navegador para simular a navegação (sem recarregar)
-        window.history.pushState({ path: path }, '', path);
+        window.history.pushState({ path: path }, '', `/${path}`);
         
         // Carrega o conteúdo da nova "página"
         loadPageContent(path);
