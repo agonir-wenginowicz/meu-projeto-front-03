@@ -36,13 +36,20 @@ const loadPageContent = async (page) => {
 };
 
 const handleNavigation = (event) => {
-    const target = event.target.closest('.nav-link');
-    if (target) {
-        event.preventDefault(); // Impede a navegação padrão (recarregar a página)
+    // 1. Tente encontrar o link com a classe nav-link ou o link mais próximo
+    const target = event.target.closest('a'); 
+
+    // 2. Garanta que é um link que queremos interceptar (e que não é um link externo ou #)
+    if (target && target.classList.contains('nav-link')) { 
         
+        // 🔑 Adicione este log para confirmar que a INTERCEPTAÇÃO está funcionando
+        console.log(`[SPA Nav] Interceptado link com data-path: ${target.getAttribute('data-path')}`);
+        
+        event.preventDefault(); // Impede o envio padrão que causa o "Not Found"
+
         const path = target.getAttribute('data-path');
         
-        // Atualiza a URL do navegador para simular a navegação (sem recarregar)
+        // Atualiza a URL do navegador
         window.history.pushState({ path: path }, '', `/${path}`);
         
         // Carrega o conteúdo da nova "página"
