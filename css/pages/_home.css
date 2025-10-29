@@ -19,6 +19,7 @@
 /* Estilo para a Galeria de Imagens (Flexbox e Grid combinados) */
 .gallery-grid {
     /* O espaçamento (gap) já vem do grid-12 */
+    margin-top:auto;
     margin-bottom: var(--spacing-6);
 }
 
