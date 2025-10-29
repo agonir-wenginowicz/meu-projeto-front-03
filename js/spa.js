@@ -64,19 +64,36 @@ const handleNavigation = (event) => {
 };
 
 // Inicialização: Carrega o conteúdo da página inicial ao abrir o site
+// js/spa.js
+
+// 🔑 NOVA FUNÇÃO: Anexa o listener ao container do SPA
+const attachSpaListeners = () => {
+    const container = document.getElementById(SPA_CONTAINER_ID);
+    if (container) {
+        // Usa o container como alvo do listener, em vez do document
+        container.addEventListener('click', handleNavigation);
+        console.log('[SPA Listeners] Event listener anexado ao #spa-content.');
+    }
+};
+
+// ...
+
+// NO SEU js/spa.js
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Configura o ouvinte de cliques para toda a navegação
-    document.querySelector('.nav-menu').addEventListener('click', handleNavigation);
     
-    // Carrega a página inicial ou o caminho atual da URL
-    const initialPath = window.location.pathname.endsWith('.html') ? window.location.pathname.split('/').pop() : 'index.html';
+    // 🔑 REVERTA ESTA LINHA: Anexe o listener de clique de volta ao 'document'
+    document.addEventListener('click', handleNavigation); 
+    
+    // 2. Inicializa a navegação inicial
+    const initialPath = window.location.pathname.split('/').pop() || 'index.html';
     loadPageContent(initialPath);
-    
-    // Listener para o botão "voltar" do navegador
+
+    // 3. Listener para o botão Voltar/Avançar do navegador
     window.addEventListener('popstate', (event) => {
-        const popPath = event.state ? event.state.path : 'index.html';
-        loadPageContent(popPath);
+        const path = event.state && event.state.path ? event.state.path : 'index.html';
+        loadPageContent(path);
     });
 
-    console.log("SPA Iniciado.");
+    console.log(`SPA Iniciado. Caminho atual: ${initialPath}`);
 });
