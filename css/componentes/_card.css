@@ -31,3 +31,9 @@
     /* ou use overflow: hidden; se não houver rolagem prevista */
     /* ou use display: flow-root; (moderno) */
 }
+#gallery-grid {
+	overflow: hidden;
+    /*overflow: auto;*/ 
+    /* ou use overflow: hidden; se não houver rolagem prevista */
+    /* ou use display: flow-root; (moderno) */
+}
