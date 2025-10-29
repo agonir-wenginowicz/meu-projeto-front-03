@@ -244,7 +244,8 @@
 .btn-secondary:hover {
   background: #545b62;
 }
-.grid-12.gallery-grid { 
-  /* Adiciona uma margem superior para afastá-lo do elemento anterior */
-  margin-top: auto; 
+.grid-12.card-list { 
+  /* Adiciona uma margem inferior para afastá-lo do elemento posterior */
+  margin-bottom: 60px; 
 }
+
