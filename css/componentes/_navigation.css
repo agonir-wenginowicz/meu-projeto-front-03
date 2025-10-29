@@ -1,5 +1,9 @@
 /* ===== ESTILOS DO MENU DE NAVEGAÇÃO ===== */
 
+#spa-content {
+    padding-top: 85px; 
+}
+
 /* Container principal do header */
 .main-header {
   background: #fff;
