@@ -246,5 +246,5 @@
 }
 .grid-12.gallery-grid { 
   /* Adiciona uma margem superior para afastá-lo do elemento anterior */
-  margin-top: 40px; 
+  margin-top: auto; 
 }
