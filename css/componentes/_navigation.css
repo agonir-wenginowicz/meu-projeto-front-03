@@ -216,10 +216,7 @@
   }
 }
 
-/* ===== CORREÇÃO PARA O CONTEÚDO NÃO FICAR ATRÁS DO HEADER FIXO ===== */
-main {
-  margin-top: 80px; /* Ajuste conforme a altura do seu header */
-}
+
 
 /* Estilos auxiliares */
 .muted {
