@@ -244,3 +244,6 @@
 .btn-secondary:hover {
   background: #545b62;
 }
+.grid-12 #gallery-grid{
+  margin-top: 20px;
+}
