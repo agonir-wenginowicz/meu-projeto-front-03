@@ -32,7 +32,7 @@
     /* ou use display: flow-root; (moderno) */
 }
 #gallery-grid {
-	overflow: hidden;
+	margin-top:auto;
     /*overflow: auto;*/ 
     /* ou use overflow: hidden; se não houver rolagem prevista */
     /* ou use display: flow-root; (moderno) */
